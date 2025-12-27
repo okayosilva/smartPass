@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "SmartPass",
+  "version": "1.0.0",
+  "description": "O Smart Pass é uma ferramenta de produtividade que integra um gerador de senhas diretamente ao seu fluxo de navegação. Crie senhas fortes instantaneamente, sem abrir abas externas ou interromper seu cadastro.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage"]
+}
