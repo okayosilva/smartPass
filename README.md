@@ -1,22 +1,20 @@
-Aqui está a versão simplificada do README, com o texto limpo e sem ícones, focando na funcionalidade de 6 a 20 caracteres e no status de desenvolvimento:
+Smart Pass (Under Development)
+Browser extension for generating secure passwords without leaving the page and without interruptions. Smart Pass integrates a robust generator directly into your browsing workflow, allowing you to create strong passwords instantly during sign-ups.
 
-Smart Pass (Em Desenvolvimento)
-Extensão de navegador para geração de senhas seguras sem sair da página e sem interrupções. O Smart Pass integra um gerador robusto diretamente ao seu fluxo de navegação, permitindo criar senhas fortes instantaneamente durante cadastros.
+Core Functionality
+The extension focuses on speed and customization:
 
-Funcionalidade Principal
-A extensão foca na agilidade e personalização:
+Automatic Generation: Create and insert secure passwords directly into form fields.
 
-Geração Automática: Crie e insira senhas seguras diretamente nos campos de formulário.
+Length Range: Adjust complexity as needed, with support for passwords ranging from 6 to 20 characters.
 
-Intervalo de Comprimento: Ajuste a complexidade conforme a necessidade, com suporte para senhas de 6 a 20 caracteres.
+Project Status
+This project is currently under active development. The tool is being optimized to ensure that password generation is handled natively with zero impact on browser performance.
 
-Status do Projeto
-Este projeto está em fase ativa de desenvolvimento. A ferramenta está sendo otimizada para garantir que a geração de senhas seja feita de forma nativa e sem impacto na performance do navegador.
+Security and Privacy
+Local Processing: All passwords are generated via window.crypto within your browser.
 
-Segurança e Privacidade
-Processamento Local: Todas as senhas são geradas via window.crypto no seu navegador.
+Total Privacy: No data is sent to external servers or stored outside of your local machine.
 
-Privacidade Total: Nenhum dado é enviado a servidores externos ou armazenado fora da sua máquina.
-
-Licença
+License
 MIT © Smart Pass
