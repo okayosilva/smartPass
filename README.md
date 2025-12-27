@@ -1,73 +1,22 @@
-# React + TypeScript + Vite
+Aqui está a versão simplificada do README, com o texto limpo e sem ícones, focando na funcionalidade de 6 a 20 caracteres e no status de desenvolvimento:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart Pass (Em Desenvolvimento)
+Extensão de navegador para geração de senhas seguras sem sair da página e sem interrupções. O Smart Pass integra um gerador robusto diretamente ao seu fluxo de navegação, permitindo criar senhas fortes instantaneamente durante cadastros.
 
-Currently, two official plugins are available:
+Funcionalidade Principal
+A extensão foca na agilidade e personalização:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Geração Automática: Crie e insira senhas seguras diretamente nos campos de formulário.
 
-## React Compiler
+Intervalo de Comprimento: Ajuste a complexidade conforme a necessidade, com suporte para senhas de 6 a 20 caracteres.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Status do Projeto
+Este projeto está em fase ativa de desenvolvimento. A ferramenta está sendo otimizada para garantir que a geração de senhas seja feita de forma nativa e sem impacto na performance do navegador.
 
-## Expanding the ESLint configuration
+Segurança e Privacidade
+Processamento Local: Todas as senhas são geradas via window.crypto no seu navegador.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Privacidade Total: Nenhum dado é enviado a servidores externos ou armazenado fora da sua máquina.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Licença
+MIT © Smart Pass
