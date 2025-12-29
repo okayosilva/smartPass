@@ -62,6 +62,7 @@ function App() {
         }, 2000);
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (error) {
+        console.log(error)
         toast.error("Failed to copy password.");
       }
     }
@@ -115,6 +116,7 @@ function App() {
 
                 <Button
                   type="button"
+                  aria-label="Copy password to clipboard"
                   className="rounded-md border-none px-3 py-2"
                   onClick={onCopyToClipboard}
                 >
