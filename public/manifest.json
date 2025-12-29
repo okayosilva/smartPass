@@ -6,5 +6,19 @@
   "action": {
     "default_popup": "index.html"
   },
-  "permissions": ["storage"]
+  "icons": {
+    "16": "assets/16.png",
+    "48": "assets/48.png",
+    "128": "assets/128.png"
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "clipboardWrite",
+    "alarms",
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
+  "background": { "service_worker": "background.js" }
 }
