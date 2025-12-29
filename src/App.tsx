@@ -68,6 +68,7 @@ function App() {
     }
   }, [password]);
 
+  // Comentario: Teste Mode
   return (
     <main className="p-4">
       <header>
