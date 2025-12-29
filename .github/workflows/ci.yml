@@ -1,0 +1,38 @@
+name: CI - Test & Build
+
+# Quando isso deve rodar?
+on:
+  push:
+    branches: [ "main", "master" ] # Roda em todo push na main
+  pull_request:
+    branches: [ "main", "master" ] # Roda em todo PR para a main
+
+jobs:
+  validate:
+    name: Validate Code
+    runs-on: ubuntu-latest # Roda numa máquina Linux virtual do GitHub
+
+    steps:
+      # 1. Baixa o seu código
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      # 2. Instala o Node.js (Ambiente limpo)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm' # Faz o install ser mais rápido nas próximas vezes
+
+      # 3. Instala as dependências
+      - name: Install Dependencies
+        run: npm ci
+
+      # 4. Roda os Testes (O GUARDA-COSTAS)
+      # Se este passo falhar, o GitHub cancela tudo e não deixa passar.
+      - name: Run Unit Tests
+        run: npm run test
+
+      # 5. Tenta fazer o Build (Só roda se os testes passarem)
+      - name: Build Project
+        run: npm run build
