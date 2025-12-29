@@ -122,6 +122,16 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  [data-sonner-toast] {
+    --normal-bg: #263a81;
+    --normal-border: #ffffff;
+    --normal-text: #ffffff;
+
+    --success-bg: #263a81;
+    --success-border: #ffffff;
+    --success-text: #ffffff;
+  }
 }
 
 body {
