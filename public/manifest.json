@@ -12,9 +12,7 @@
     "128": "assets/128.png"
   },
   "permissions": [
-    "storage",
     "notifications",
-    "clipboardWrite",
     "alarms",
     "contextMenus",
     "scripting",
