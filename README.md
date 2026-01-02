@@ -9,10 +9,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-under%20development-yellow" alt="Status" />
+  <img src="https://img.shields.io/badge/deploy-success-brightgreen" alt="Deploy Status" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
 </p>
 
+## 🔗 Links Úteis
+
+* **Extensão Oficial:** [SmartPass na Chrome Web Store](https://chromewebstore.google.com/detail/smartpass/olinbppfnflmmjlccmdlfjjkckhinjnj?hl=pt-BR&utm_source=ext_sidebar)
 ---
 
 ## Overview
